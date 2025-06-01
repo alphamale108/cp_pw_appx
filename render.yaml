@@ -2,6 +2,7 @@ services:
   - type: web
     name: pw-classplus-bot
     env: python
+    repo: https://github.com/chutpagludotnet/downCourse
     region: oregon
     plan: starter
     buildCommand: pip install -r requirements.txt

@@ -2,7 +2,7 @@ services:
   - type: web
     name: pw-classplus-bot
     env: docker
-    repo: https://github.com/chutpagludotnet/downCourse
+    repo: https://github.com/chutpagludotnet/cp_pw_appx
     region: virginia
     plan: starter
     buildCommand: pip install -r requirements.txt

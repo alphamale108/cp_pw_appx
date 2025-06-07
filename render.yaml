@@ -9,7 +9,7 @@ services:
     startCommand: python3 main.py
     envVars:
       - key: PORT
-        value: 8000
+        value: 8000  # Default port value, update if needed
       - key: API_ID
         sync: false
       - key: API_HASH

@@ -4,7 +4,8 @@ services:
     env: docker
     repo: https://github.com/chutpagludotnet/cp_pw_appx
     region: virginia
-    plan: starter
+    plan: free
+    branch: main
     buildCommand: pip install -r requirements.txt
     startCommand: python3 main.py
     envVars:

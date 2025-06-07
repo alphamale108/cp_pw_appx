@@ -1,14 +1,12 @@
 services:
   - type: web
-    name: pw-classplus-bot
-    env: docker
-    repo: https://github.com/chutpagludotnet/cp_pw_appx
-    region: virginia
+    name: SAINI TXT DIRECT 
     plan: free
+    env: docker
+    dockerfilePath: Dockerfile
+    repo: https://github.com/nikhilsainiop/Saini-txt-direct
     branch: main
-    buildCommand: pip install -r requirements.txt
-    startCommand: python3 main.py
-    envVars:
+    autoDeploy: false
       - key: PORT
         value: 10000
       - key: API_ID

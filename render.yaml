@@ -1,20 +1,20 @@
 services:
   - type: web
-    name: SAINI TXT DIRECT 
-    plan: free
+    name: pw-classplus-bot
     env: docker
-    dockerfilePath: Dockerfile
-    repo: https://github.com/nikhilsainiop/Saini-txt-direct
-    branch: main
-    autoDeploy: false
+    repo: https://github.com/chutpagludotnet/cp_pw_appx
+    region: virginia
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 main.py
     envVars:
-      - key: BOT_TOKEN
-        sync: false
+      - key: PORT
+        value: 10000
       - key: API_ID
         sync: false
       - key: API_HASH
         sync: false
-      #- key: WEBHOOK
-        #sync: false
-      - key: PORT
-        value: 8000  # Default port value, update if needed
+      - key: BOT_TOKEN
+        sync: false
+      - key: AUTH_USERS
+        sync: false

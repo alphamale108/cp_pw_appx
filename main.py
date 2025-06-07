@@ -47,7 +47,7 @@ image_list = [
 print(4321)
 bot = Client(
     "bot",
-    api_id=,
+    api_id="",
     api_hash="",
     bot_token=""
 )
